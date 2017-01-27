@@ -1,0 +1,14 @@
+{{yield totalTime}}
+<div id="clockContainer">
+	<div id="currentTime">
+		{{totalTime}}
+	</div> 
+</div>
+<br><br>
+<div id="startBtnContainer">
+	{{#if showStart}}
+		<button id="startBtn" type="submit" {{action "toggleTime"}}>Start</button>
+	{{else}}
+		<button id="stopBtn" type="submit" {{action "toggleTime"}}>Stop</button>
+	{{/if}}
+</div>

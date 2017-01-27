@@ -1,0 +1,253 @@
+
+*{
+ font-family:sans-serif;
+}
+
+body{
+ margin-top: 0;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+#navMenu{
+ margin-top:0;
+ margin-left:0;
+ width:100%;
+ height:60px;
+ display: block;
+ padding-bottom: 10px;
+ background-color: #2d702c;
+}
+
+.navOption{
+	display: inline-block;
+	color: #ffffff;
+	float: right;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+#navDivider{
+	color: #ffffff;
+	float: right;
+	font-size: 25px;
+	padding-top: 15px;
+}
+
+#title{
+ float:left;
+ width: 100px;
+ font-size: 30px;
+ text-align: center;
+ color: #ffffff;
+ padding-left: 5px;
+}
+
+h3{
+ font-size: 20px;
+ text-align: center;
+
+}
+
+/* 
+*********************** index template ***********************
+*/
+
+#invoicesTitle{
+ text-align: center;
+}
+
+#invoicesTable{
+ width:60%;
+ margin:0 auto;
+ text-align: center;
+ font-size: 20px;
+ padding:20px;
+ background-color:#cfe8b7;
+}
+
+	#invoicesTable th{
+	 border-bottom:1px solid #000000;
+	}
+
+
+.viewBtn:hover{
+ background-color:darkgrey;
+ color:#ffffff;
+}
+
+#addBtn{
+ margin: 0 auto;
+ width: 200px;
+ height: 50px;
+ text-align: center;
+ line-height: 50px;
+ border-radius: 5px;
+ font-size: 20px;
+ background-color: #eca23a;
+ color:#ffffff;	
+}
+
+
+/* 
+*********************** add-invoice template ***********************
+*/
+
+#clockContainer{
+ padding: 5px;
+ max-width: 360px;
+ margin: 0 auto;
+ background-color: #000000;
+ border-radius: 10px;
+}
+
+#currentTime{
+ margin: 0 auto;
+ height: 100px;
+ background-color: #ffffff;
+ color: #000000;
+ text-align: center;
+ line-height: 100px;
+ font-size: 50px;
+ font-family: 'Quantico', sans-serif;
+}
+
+#startBtnContainer{
+ width: 150px;
+ margin: 0 auto;
+}
+
+@font-face{
+ font-family: 'Quantico';
+ src: url('https://fonts.googleapis.com/css?family=Quantico');
+}
+
+#startBtn{
+ margin: 0 auto;
+ width: 150px;
+ height: 150px;
+ text-align: center;
+ line-height: 150px;
+ border-radius: 5000px;
+ font-size: 40px;
+ background-color: #2d702c;
+ color: #ffffff;
+}
+
+#stopBtn{
+ margin: 0 auto;
+ width: 150px;
+ height: 150px;
+ text-align: center;
+ line-height: 150px;
+ border-radius: 5000px;
+ font-size: 40px;
+ background-color: red;
+ color: #ffffff;
+}
+
+#invoiceEntry{
+ width: 280px;
+ margin: 0 auto;
+}
+
+	#invoiceEntry table tr{
+	 padding-top:15px;
+	}
+
+.invoiceInput{
+ width: 280px;
+ margin: 0 auto;
+ height: 30px;
+ font-size: 15px;
+ border:none;
+ border-bottom: 1px dotted #000000;
+}
+
+#aboveTextarea{
+	border-bottom: none;
+}
+
+#invoiceDescription{
+ width:280px;
+ border:1px dotted #000000;
+}
+
+#submitBtnContainer{
+ width:150px;
+ margin:0 auto;
+}
+
+#generateBtn{
+ margin: 0 auto;
+ width: 100%;
+ height: 50px;
+ text-align: center;
+ line-height: 50px;
+ border-radius: 5px;
+ font-size: 20px;
+ background-color: #eca23a;
+ color:#ffffff;
+}
+
+/*
+*********************** invoice template ***********************
+*/
+
+#invoiceContainer{
+ width: 70%;
+ margin: 0 auto;
+}
+
+#dateContainer{
+ margin-top: 10px;
+ margin-bottom: 20px;
+ width: 200px;
+
+}
+	#dateContainer table{
+	 border:1px solid #2d702c;
+	 width:200px;
+	}
+
+#billToContainer{
+ border:1px solid #2d702c;
+ width:200px;
+}
+
+#billTo{
+ background-color: #2d702c;
+ color:#ffffff;
+ width:200px;
+ height:25px;
+ line-height:25px;
+}
+
+#lineItemTable{
+ width:60%;
+ height: 25px;
+ line-height: 25px;
+ border:1px solid #2d702c;
+}
+
+#thead{
+ background-color: #2d702c;
+ color:#ffffff;
+}
+
+#total{
+ border-top:1px solid #000000;
+}
+	
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+{{outlet}}
+
+{{clock-control totalTime=totalTime}}
+<br><br>
+<form id="invoiceEntry">
+	<table>
+		<tr>
+			<td>
+				{{input required class="invoiceInput" placeholder="First Name" value=model.firstName}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{input required class="invoiceInput" placeholder="Last Name" value=model.lastName}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{input required class="invoiceInput" placeholder="Client Name" value=model.clientName}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{input required class="invoiceInput" placeholder="Project Title" value=model.projectTitle}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{input required id="aboveTextarea" class="invoiceInput" placeholder="Billing Rate ($/hr)" value=model.billingRate}}
+			</td>
+		</tr>
+		<tr>
+			<td>
+				{{textarea rows="6" maxlength="1000" id="invoiceDescription" placeholder="Project Description" value=model.projectDescription}}
+			</td>
+		</tr>
+	</table>
+	<div id="submitBtnContainer">
+		<button id="generateBtn" type="submit" {{action "submitInvoice" model totalTime}}>Generate Invoice</button>
+	</div>
+</form>

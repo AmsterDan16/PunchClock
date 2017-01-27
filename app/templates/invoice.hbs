@@ -1,0 +1,64 @@
+<div id="invoiceContainer">
+	<h2 id="invoiceTitle">Invoice</h2>
+	<div id="dateContainer">
+		<table>
+			<tr>
+				<td>Date:</td>
+				<td>{{model.date}}</td>
+			</tr>
+			<tr>
+				<td>Invoice#:</td>
+				<td>{{model.id}}</td>
+			</tr>
+		</table>
+	</div>
+	<div id="sender">
+		Sender: {{model.firstName}} {{model.lastName}}
+	</div>
+	<br>
+	<div id="billToContainer">
+		<div id="billTo">Bill To</div>
+		{{model.clientName}}<br>
+		[Street Address]<br>
+		[City, ST ZIP]<br>
+		[Phone]
+	</div>
+	<br>
+	<div id="billToContainer">
+		<div id="billTo">Project Description</div>
+		{{model.projectDescription}}
+	</div>
+
+	<br><br>
+	<table id="lineItemTable">
+		<tr id="thead">
+			<th>Project</th>
+			<th>Time</th>
+			<th>Rate/Hr</th>
+		</tr>
+		<tr>
+			<td>{{model.projectTitle}}</td>
+			<td>{{model.timeWorked}}</td>
+			<td>{{model.billingRate}}</td>
+		</tr>
+		
+	</table>
+
+	<br><br>
+	<div id="totalContainer">
+		<table>
+			<tr>
+				<td></td>
+				<td>${{model.billingRate}} /hr</td>
+			</tr>
+			<tr>
+				<td>X</td>
+				<td>{{model.timeWorked}}</td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td><div id="total">{{invoice-total billingRate=model.billingRate hoursWorked=model.timeWorked}}</div></td>
+			</tr>
+		</table>
+	</div><br><br><br>
+</div>
